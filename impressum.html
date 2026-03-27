@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impressum | 80er.me</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink: #ff2d78; --cyan: #00e5ff; --dark: #07070d; --dark2: #0f0f1a;
+    --dark3: #16162a; --text: #e8e8f0; --muted: #6060a0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--dark); color: var(--text);
+    font-family: 'Space Mono', monospace; min-height: 100vh;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0;
+    background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.13) 2px, rgba(0,0,0,0.13) 4px);
+    pointer-events: none; z-index: 999;
+  }
+  body::after {
+    content: ''; position: fixed; inset: 0;
+    background-image: linear-gradient(rgba(0,229,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(0,229,255,0.035) 1px, transparent 1px);
+    background-size: 44px 44px; pointer-events: none; z-index: 0;
+  }
+  .wrapper { position: relative; z-index: 1; max-width: 660px; margin: 0 auto; padding: 2rem 1.5rem 5rem; }
+  .site-header { text-align: center; padding: 2rem 0 2.5rem; }
+  .logo { font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.15em; text-decoration: none; }
+  .page-title {
+    font-family: 'Press Start 2P', monospace; font-size: clamp(12px, 2.5vw, 16px);
+    color: #fff; line-height: 1.7; margin-bottom: 2.5rem;
+    text-shadow: 0 0 30px rgba(0,229,255,0.3);
+  }
+  .card {
+    background: var(--dark2); border: 1px solid rgba(0,229,255,0.12);
+    padding: 1.8rem 2rem; margin-bottom: 1.5rem; position: relative;
+  }
+  .card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, var(--pink), var(--cyan));
+  }
+  h2 {
+    font-family: 'Press Start 2P', monospace; font-size: 9px; color: var(--cyan);
+    letter-spacing: 0.12em; margin-bottom: 1.2rem; text-transform: uppercase;
+  }
+  p { font-size: 13px; line-height: 1.9; color: var(--text); margin-bottom: 0.8rem; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--pink); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .muted { color: var(--muted); font-size: 12px; }
+  footer {
+    margin-top: 3rem; padding-top: 1.5rem;
+    border-top: 1px solid rgba(96,96,160,0.25);
+    display: flex; gap: 1.5rem; flex-wrap: wrap;
+    font-family: 'Press Start 2P', monospace; font-size: 8px;
+  }
+  footer a { color: var(--muted); text-decoration: none; letter-spacing: 0.08em; }
+  footer a:hover { color: var(--cyan); }
+  @media (max-width: 480px) { .wrapper { padding: 1.2rem 1rem 3rem; } .card { padding: 1.4rem 1.2rem; } }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <header class="site-header">
+    <a class="logo" href="/">80er.me</a>
+  </header>
+
+  <h1 class="page-title">Impressum</h1>
+
+  <div class="card">
+    <h2>Angaben gemäß § 5 TMG</h2>
+    <p>
+      Erik Lenhard<br>
+      c/o IP-Management #8333<br>
+      Ludwig-Erhard-Str. 18<br>
+      20459 Hamburg
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Kontakt</h2>
+    <p>E-Mail: <a href="mailto:erik.lenhard@80er.me">erik.lenhard@80er.me</a></p>
+  </div>
+
+  <div class="card">
+    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+    <p>
+      Erik Lenhard<br>
+      c/o IP-Management #8333<br>
+      Ludwig-Erhard-Str. 18<br>
+      20459 Hamburg
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Streitschlichtung</h2>
+    <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a></p>
+    <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+  </div>
+
+  <div class="card">
+    <h2>Haftung für Inhalte</h2>
+    <p>Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+    <p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+  </div>
+
+  <footer>
+    <a href="/">← Zurück zum Quiz</a>
+    <a href="/datenschutz.html">Datenschutz</a>
+    <a href="/impressum.html">Impressum</a>
+  </footer>
+</div>
+</body>
+</html>

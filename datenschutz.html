@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenschutz | 80er.me</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink: #ff2d78; --cyan: #00e5ff; --dark: #07070d; --dark2: #0f0f1a;
+    --dark3: #16162a; --text: #e8e8f0; --muted: #6060a0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--dark); color: var(--text);
+    font-family: 'Space Mono', monospace; min-height: 100vh;
+  }
+  body::before {
+    content: ''; position: fixed; inset: 0;
+    background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.13) 2px, rgba(0,0,0,0.13) 4px);
+    pointer-events: none; z-index: 999;
+  }
+  body::after {
+    content: ''; position: fixed; inset: 0;
+    background-image: linear-gradient(rgba(0,229,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(0,229,255,0.035) 1px, transparent 1px);
+    background-size: 44px 44px; pointer-events: none; z-index: 0;
+  }
+  .wrapper { position: relative; z-index: 1; max-width: 660px; margin: 0 auto; padding: 2rem 1.5rem 5rem; }
+  .site-header { text-align: center; padding: 2rem 0 2.5rem; }
+  .logo { font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.15em; text-decoration: none; }
+  .page-title {
+    font-family: 'Press Start 2P', monospace; font-size: clamp(12px, 2.5vw, 16px);
+    color: #fff; line-height: 1.7; margin-bottom: 2.5rem;
+    text-shadow: 0 0 30px rgba(0,229,255,0.3);
+  }
+  .card {
+    background: var(--dark2); border: 1px solid rgba(0,229,255,0.12);
+    padding: 1.8rem 2rem; margin-bottom: 1.5rem; position: relative;
+  }
+  .card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, var(--pink), var(--cyan));
+  }
+  h2 {
+    font-family: 'Press Start 2P', monospace; font-size: 9px; color: var(--cyan);
+    letter-spacing: 0.12em; margin-bottom: 1.2rem; text-transform: uppercase;
+  }
+  p { font-size: 13px; line-height: 1.9; color: var(--text); margin-bottom: 0.8rem; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--pink); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer {
+    margin-top: 3rem; padding-top: 1.5rem;
+    border-top: 1px solid rgba(96,96,160,0.25);
+    display: flex; gap: 1.5rem; flex-wrap: wrap;
+    font-family: 'Press Start 2P', monospace; font-size: 8px;
+  }
+  footer a { color: var(--muted); text-decoration: none; letter-spacing: 0.08em; }
+  footer a:hover { color: var(--cyan); }
+  @media (max-width: 480px) { .wrapper { padding: 1.2rem 1rem 3rem; } .card { padding: 1.4rem 1.2rem; } }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <header class="site-header">
+    <a class="logo" href="/">80er.me</a>
+  </header>
+
+  <h1 class="page-title">Datenschutz­erklärung</h1>
+
+  <div class="card">
+    <h2>1. Verantwortlicher</h2>
+    <p>
+      Erik Lenhard<br>
+      c/o IP-Management #8333<br>
+      Ludwig-Erhard-Str. 18<br>
+      20459 Hamburg<br>
+      E-Mail: <a href="mailto:erik.lenhard@80er.me">erik.lenhard@80er.me</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>2. Hosting</h2>
+    <p>Diese Website wird gehostet bei Netlify, Inc., 512 2nd Street, Suite 200, San Francisco, CA 94107, USA. Netlify kann beim Aufruf der Website Server-Logfiles erfassen, die technisch notwendige Daten wie IP-Adresse, Browsertyp und aufgerufene Seite enthalten. Dies erfolgt auf Basis von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren Betrieb der Website). Die Datenschutzerklärung von Netlify ist abrufbar unter <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener">netlify.com/privacy</a>.</p>
+  </div>
+
+  <div class="card">
+    <h2>3. Schriftarten (Google Fonts)</h2>
+    <p>Diese Website lädt Schriftarten über Google Fonts (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Dabei wird beim Seitenaufruf eine Verbindung zu Servern von Google hergestellt und dabei die IP-Adresse des Besuchers übertragen. Dies erfolgt auf Basis von Art. 6 Abs. 1 lit. f DSGVO. Google kann diese Daten seinen eigenen Datenschutzbestimmungen gemäß verarbeiten: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+    <p>Alternativ können Schriftarten lokal eingebunden werden, um die Übertragung an Google zu vermeiden. Bei Wunsch ist dies auf Anfrage möglich.</p>
+  </div>
+
+  <div class="card">
+    <h2>4. Das Quiz — keine Datenspeicherung</h2>
+    <p>Das Quiz auf dieser Website verarbeitet ausschließlich im Arbeitsspeicher des Browsers des Nutzers. Es werden keine Antworten, Ergebnisse oder personenbezogene Daten an einen Server übertragen oder dauerhaft gespeichert. Es werden keine Cookies gesetzt. Nach Schließen des Browserfensters sind alle Daten unwiderruflich gelöscht.</p>
+  </div>
+
+  <div class="card">
+    <h2>5. Externe Links</h2>
+    <p>Diese Website enthält Links zu Amazon (amazon.de). Beim Klick auf diese Links verlassen Sie unsere Website. Für die Inhalte und Datenschutzpraktiken der verlinkten Seiten sind wir nicht verantwortlich. Es bestehen keine Affiliate-Partnerschaften; der Link führt direkt zur Produktseite ohne Tracking-Parameter.</p>
+  </div>
+
+  <div class="card">
+    <h2>6. Ihre Rechte</h2>
+    <p>Sie haben gemäß DSGVO das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie Widerspruch (Art. 21). Da wir keine personenbezogenen Daten aktiv erheben oder speichern, sind diese Rechte auf dieser Website nur in Bezug auf die Server-Logfiles von Netlify anwendbar.</p>
+    <p>Bei Fragen zum Datenschutz wenden Sie sich an: <a href="mailto:erik.lenhard@80er.me">erik.lenhard@80er.me</a></p>
+    <p>Sie haben außerdem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Zuständig ist die Behörde des Bundeslandes Ihres gewöhnlichen Aufenthalts oder Arbeitsplatzes.</p>
+  </div>
+
+  <footer>
+    <a href="/">← Zurück zum Quiz</a>
+    <a href="/datenschutz.html">Datenschutz</a>
+    <a href="/impressum.html">Impressum</a>
+  </footer>
+</div>
+</body>
+</html>
