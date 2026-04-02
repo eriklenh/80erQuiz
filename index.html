@@ -29,17 +29,50 @@
 
 <!-- Structured Data / JSON-LD -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Quiz",
-  "name": "Welcher 80er-Typ bist du?",
-  "description": "Ein Nostalgie-Persönlichkeitsquiz über deine Kindheit in den 1980er Jahren. 7 Fragen, 6 mögliche Ergebnisse.",
-  "url": "https://80erquiz.netlify.app/",
-  "author": { "@type": "Person", "name": "Erik Lenhard" },
-  "datePublished": "2026-01-01",
-  "inLanguage": "de",
-  "about": { "@type": "Thing", "name": "1980er Jahre Kindheit und Jugend in Deutschland" }
-}
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Quiz",
+    "name": "Welcher 80er-Typ bist du?",
+    "description": "Ein Nostalgie-Persönlichkeitsquiz über deine Kindheit in den 1980er Jahren. 7 Fragen, 6 mögliche Ergebnisse: Die Straßengang, Der Mixtape-Architekt, Der Zeichentrick-Fan, Der Pixel-Pionier, Der Nachtleser, Der Pausenhof-Netzwerker.",
+    "url": "https://80erquiz.netlify.app/",
+    "author": { "@type": "Person", "name": "Erik Lenhard" },
+    "datePublished": "2026-01-01",
+    "inLanguage": "de",
+    "about": { "@type": "Thing", "name": "1980er Jahre Kindheit und Jugend in Deutschland" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welcher 80er-Typ bin ich?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Das hängt davon ab, wie du deine Kindheit in den 80ern erlebt hast. Warst du eher draußen unterwegs (Die Straßengang), hast du Mixtapes aufgenommen (Mixtape-Architekt), Zeichentrick geschaut (Zeichentrick-Fan), an Computern gebastelt (Pixel-Pionier), Bücher gelesen (Nachtleser) oder warst du das soziale Zentrum deiner Klasse (Pausenhof-Netzwerker)? Mach das Quiz und finde es heraus." }
+      },
+      {
+        "@type": "Question",
+        "name": "Was sind typische Kindheitserinnerungen aus den 80er Jahren?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Typische Kindheitserinnerungen aus den 80ern sind: Cassetten und Walkman, Zeichentrickserien am Samstagmorgen (He-Man, Schlümpfe), C64 und erste Computerspiele, Capri-Sonne und Brausepulver, Telefonate am Festnetz, Fahrrad fahren ohne Handy, Sticker-Alben, Mixtapes aufnehmen vom Radio und Videotheken." }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie war es, in den 80er Jahren aufzuwachsen?",
+        "acceptedAnswer": { "@type": "Answer", "text": "In den 80ern aufzuwachsen bedeutete: keine Handys, kein Internet, dafür echter Zusammenhalt auf dem Pausenhof. Freiheit bedeutete Fahrrad und keine GPS-Überwachung. Unterhaltung kam aus dem Fernseher (nur wenige Kanäle), vom C64 oder aus der Videothek. Musik trug man auf Kassetten mit sich. Es war eine Zeit der Entschleunigung und echter sozialer Verbindungen." }
+      },
+      {
+        "@type": "Question",
+        "name": "Was ist ein 80er-Persönlichkeitstest?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ein 80er-Persönlichkeitstest wie dieser ordnet dich anhand deiner Kindheitserinnerungen und -vorlieben einem von sechs Typen zu. Die Fragen beziehen sich auf typische Situationen aus den 80ern: Was hast du nach der Schule gemacht? Was war dein größter Schatz? Was war dein Lieblingston? Das Ergebnis zeigt, welche Prägungen dich aus den 80ern begleiten." }
+      },
+      {
+        "@type": "Question",
+        "name": "Wer sind die 6 80er-Typen?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Die sechs 80er-Typen sind: 1) Die Straßengang – immer draußen, Freiheit auf dem Fahrrad. 2) Der Mixtape-Architekt – Musik als Sprache, stundenlang Kassetten bespielt. 3) Der Zeichentrick-Fan – Samstag 8 Uhr vor dem Fernseher, Sticker-Sammler. 4) Der Pixel-Pionier – erste Generation an Computern, C64-Veteran. 5) Der Nachtleser – Taschenlampe unter der Decke, in eigenen Welten. 6) Der Pausenhof-Netzwerker – soziales Zentrum, wusste alles über alle." }
+      }
+    ]
+  }
+]
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -146,6 +179,29 @@
   .site-footer nav a:hover { color: var(--cyan); }
   .site-footer p { font-size: 11px; color: var(--muted); }
 
+  /* SEO CONTENT SECTIONS */
+  .seo-section { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(96,96,160,0.15); }
+  .seo-section h2 { font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--cyan); letter-spacing: 0.15em; margin-bottom: 1.8rem; }
+  .seo-section h3 { font-family: 'Press Start 2P', monospace; font-size: 9px; color: var(--yellow); letter-spacing: 0.1em; margin-bottom: 0.6rem; }
+  .seo-section p { font-size: 13px; color: var(--muted); line-height: 1.85; margin-bottom: 1rem; }
+  .seo-section p strong { color: var(--text); }
+  .types-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
+  .type-card { background: var(--dark2); border: 1px solid rgba(96,96,160,0.18); padding: 1.2rem 1.4rem; position: relative; }
+  .type-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; }
+  .type-card.pink::before { background: var(--pink); }
+  .type-card.cyan::before { background: var(--cyan); }
+  .type-card.yellow::before { background: var(--yellow); }
+  .type-card .type-emoji { font-size: 24px; display: block; margin-bottom: 0.5rem; }
+  .type-card h3 { font-size: 8px; margin-bottom: 0.5rem; }
+  .type-card.pink h3 { color: var(--pink); }
+  .type-card.cyan h3 { color: var(--cyan); }
+  .type-card.yellow h3 { color: var(--yellow); }
+  .type-card p { font-size: 12px; margin-bottom: 0; }
+  .faq-item { margin-bottom: 1.4rem; padding-bottom: 1.4rem; border-bottom: 1px solid rgba(96,96,160,0.12); }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item h3 { font-family: 'Space Mono', monospace; font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; letter-spacing: 0; }
+  @media (max-width: 480px) { .types-grid { grid-template-columns: 1fr; } }
+
   /* PIXEL BURST */
   .px { position: fixed; width: 5px; height: 5px; pointer-events: none; z-index: 998; animation: pxfly var(--d) ease-out forwards; }
   @keyframes pxfly { 0%{transform:translate(0,0) scale(1);opacity:1} 100%{transform:translate(var(--tx),var(--ty)) scale(0);opacity:0} }
@@ -210,6 +266,65 @@
       <a class="btn-book" href="https://amzn.eu/d/0aWjBzzz" target="_blank" rel="noopener">📖 JUGEND IN DEN 80ERN →</a>
     </div>
     <button class="btn-retry" onclick="retryQuiz()">↺ NOCHMAL</button>
+  </section>
+
+  <!-- SEO: Die 6 Typen -->
+  <section class="seo-section" aria-label="Die 6 80er-Typen">
+    <h2>DIE 6 80ER-TYPEN</h2>
+    <p>Dieses Quiz ordnet dich einem von sechs Typen zu — je nachdem, wie du deine <strong>Kindheit in den 80er Jahren</strong> erlebt hast. Welcher bist du?</p>
+    <div class="types-grid">
+      <div class="type-card pink">
+        <span class="type-emoji">🚲</span>
+        <h3>Die Straßengang</h3>
+        <p>Du warst immer draußen. Fahrrad, Asphalt, Capri-Sonne — das war deine Welt. Kein Plan, kein Handy, kein Problem.</p>
+      </div>
+      <div class="type-card cyan">
+        <span class="type-emoji">📼</span>
+        <h3>Der Mixtape-Architekt</h3>
+        <p>Für dich war eine Kassette Kunst. Du hast stundenlang auf den richtigen Song im Radio gewartet und Setlists penibel beschriftet.</p>
+      </div>
+      <div class="type-card yellow">
+        <span class="type-emoji">📺</span>
+        <h3>Der Zeichentrick-Fan</h3>
+        <p>Samstag 8 Uhr war heilig. He-Man, Schlümpfe, Wickie — diese Serien haben dich geprägt. Dein Sticker-Album war fast vollständig.</p>
+      </div>
+      <div class="type-card pink">
+        <span class="type-emoji">🕹️</span>
+        <h3>Der Pixel-Pionier</h3>
+        <p>Du gehörst zur ersten Generation, die an einem Bildschirm gespielt hat. C64, Ladezeiten, Joystick — du hast Technik nicht nur benutzt, du hast sie verstanden.</p>
+      </div>
+      <div class="type-card cyan">
+        <span class="type-emoji">🔦</span>
+        <h3>Der Nachtleser</h3>
+        <p>Taschenlampe unter der Decke, drei Kapitel nach Licht aus. Du warst oft in Welten unterwegs, die kein anderer sehen konnte.</p>
+      </div>
+      <div class="type-card yellow">
+        <span class="type-emoji">📞</span>
+        <h3>Der Pausenhof-Netzwerker</h3>
+        <p>Der Pausenhof war dein soziales Netzwerk — lange bevor es das Wort gab. Freundschaften waren dein Betriebssystem.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO: FAQ -->
+  <section class="seo-section" aria-label="Häufige Fragen">
+    <h2>HÄUFIGE FRAGEN</h2>
+    <div class="faq-item">
+      <h3>Welcher 80er-Typ bin ich?</h3>
+      <p>Das hängt davon ab, wie du deine <strong>Kindheit in den 80er Jahren</strong> erlebt hast. Warst du eher draußen, hast Mixtapes aufgenommen, Zeichentrick geschaut, an Computern gebastelt, Bücher gelesen oder warst du das soziale Zentrum deiner Klasse? Das Quiz stellt dir 7 Fragen und findet es heraus — in etwa 2 Minuten, ohne Login.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Was sind typische Erinnerungen aus den 80ern?</h3>
+      <p>Wer in den <strong>80er Jahren aufgewachsen</strong> ist, erinnert sich an: Walkman und Kassetten, Zeichentrick am Samstagmorgen, den C64 mit minutenlangen Ladezeiten, Capri-Sonne beim Spielen draußen, Telefonate am Festnetz, Videotheken, Sticker-Alben und das geduldige Warten auf den Lieblingssong im Radio.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Für wen ist dieses Quiz?</h3>
+      <p>Für alle, die in den <strong>80er Jahren groß geworden</strong> sind — also Jahrgänge grob zwischen 1968 und 1982. Und für alle, die wissen wollen, welcher Typ sie wirklich waren: der Freigeist draußen, der Musikenthusiast, der Technik-Nerd, der Leser, der TV-Fan oder der soziale Knotenpunkt.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Wie lange dauert das Quiz?</h3>
+      <p>Etwa <strong>2 Minuten</strong>. 7 Fragen, je 6 Antwortmöglichkeiten. Kein Login, keine E-Mail, kein Quatsch. Einfach loslegen und Ergebnis teilen.</p>
+    </div>
   </section>
 
   <footer class="site-footer">
