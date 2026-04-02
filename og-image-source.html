@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 630px; overflow: hidden;
+    background: #07070d;
+    font-family: 'Space Mono', monospace;
+    display: flex; align-items: center; justify-content: center;
+  }
+  /* Grid background */
+  body::after {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(0,229,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,229,255,0.04) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+  /* Scanlines */
+  body::before {
+    content: ''; position: absolute; inset: 0;
+    background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.15) 2px, rgba(0,0,0,0.15) 4px);
+    z-index: 10;
+  }
+  .card {
+    position: relative; z-index: 5;
+    text-align: center;
+    padding: 60px 80px;
+  }
+  .eyebrow {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 13px;
+    color: #00e5ff;
+    letter-spacing: 0.25em;
+    margin-bottom: 28px;
+  }
+  .title {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 42px;
+    line-height: 1.55;
+    color: #fff;
+    text-shadow: 0 0 60px rgba(255,45,120,0.7);
+    margin-bottom: 12px;
+  }
+  .title em {
+    color: #ff2d78;
+    font-style: normal;
+    display: block;
+  }
+  .sub {
+    font-size: 18px;
+    color: #6060a0;
+    margin: 24px 0 40px;
+    line-height: 1.6;
+  }
+  .sub strong { color: #e8e8f0; }
+  .types {
+    display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+    margin-bottom: 44px;
+  }
+  .type {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    padding: 8px 14px;
+    border: 1px solid rgba(255,45,120,0.4);
+    color: #ff2d78;
+    background: rgba(255,45,120,0.06);
+  }
+  .type.c { border-color: rgba(0,229,255,0.4); color: #00e5ff; background: rgba(0,229,255,0.06); }
+  .type.y { border-color: rgba(255,230,0,0.4); color: #ffe600; background: rgba(255,230,0,0.06); }
+  .url {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 11px;
+    color: #6060a0;
+    letter-spacing: 0.12em;
+  }
+  /* Corner accents */
+  .corner { position: absolute; width: 32px; height: 32px; }
+  .tl { top: 24px; left: 24px; border-top: 2px solid #ff2d78; border-left: 2px solid #ff2d78; }
+  .tr { top: 24px; right: 24px; border-top: 2px solid #00e5ff; border-right: 2px solid #00e5ff; }
+  .bl { bottom: 24px; left: 24px; border-bottom: 2px solid #00e5ff; border-left: 2px solid #00e5ff; }
+  .br { bottom: 24px; right: 24px; border-bottom: 2px solid #ff2d78; border-right: 2px solid #ff2d78; }
+</style>
+</head>
+<body>
+  <div class="corner tl"></div>
+  <div class="corner tr"></div>
+  <div class="corner bl"></div>
+  <div class="corner br"></div>
+  <div class="card">
+    <div class="eyebrow">▶ NOSTALGIE-QUIZ</div>
+    <div class="title">Welcher<em>80er-Typ</em>bist du?</div>
+    <div class="sub"><strong>7 Fragen.</strong> Eine Wahrheit. 2 Minuten.</div>
+    <div class="types">
+      <span class="type">🚲 Straßengang</span>
+      <span class="type c">📼 Mixtape-Architekt</span>
+      <span class="type y">🕹️ Pixel-Pionier</span>
+      <span class="type">📺 Zeichentrick-Fan</span>
+      <span class="type c">🔦 Nachtleser</span>
+      <span class="type y">📞 Pausenhof-Netzwerker</span>
+    </div>
+    <div class="url">80erquiz.netlify.app</div>
+  </div>
+</body>
+</html>
