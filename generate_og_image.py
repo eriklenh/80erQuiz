@@ -1,4 +1,4 @@
-"""Generate og-image.png for 80erquiz.netlify.app (1200x630px)"""
+"""Generate og-image.png for eriklenh.github.io/80erQuiz (1200x630px)"""
 from PIL import Image, ImageDraw, ImageFont
 import math, os
 
@@ -114,7 +114,7 @@ for row_i, row in enumerate(row_tags):
 
 # --- URL ---
 url_font = font(18)
-url = "80erquiz.netlify.app"
+url = "eriklenh.github.io/80erQuiz"
 urlw = draw.textlength(url, font=url_font)
 draw.text(((W-urlw)/2, H-50), url, fill=MUTED, font=url_font)
 
