@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://80erquiz.netlify.app/</loc>
+    <loc>https://eriklenh.github.io/80erQuiz/</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://80erquiz.netlify.app/impressum.html</loc>
+    <loc>https://eriklenh.github.io/80erQuiz/impressum.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://80erquiz.netlify.app/datenschutz.html</loc>
+    <loc>https://eriklenh.github.io/80erQuiz/datenschutz.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>

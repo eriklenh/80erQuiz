@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://80erquiz.netlify.app/sitemap.xml
+Sitemap: https://eriklenh.github.io/80erQuiz/sitemap.xml
